@@ -4,13 +4,13 @@
 
 Console.Clear();
 Console.Write("Введите день недели(число): ");
-int a = int.Parse(Console.ReadLine()!);
+int week = int.Parse(Console.ReadLine()!);
 
-if(a < 1 || a > 7) {
+if(week < 1 || week > 7) {
     Console.WriteLine("Недопустимое число");
     return;
 }
-if(a >= 6) {
+if(week >= 6) {
     Console.WriteLine("Выходной день");
 }
 else {
