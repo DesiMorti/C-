@@ -1,4 +1,8 @@
-﻿Console.Clear();
+﻿/*
+    Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+*/
+
+Console.Clear();
 Console.Write("Введите целое число: ");
 int a = int.Parse(Console.ReadLine()!);
 string str = Convert.ToString(a);
