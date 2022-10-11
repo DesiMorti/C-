@@ -3,11 +3,11 @@
 */
 
 Console.Clear();
-void FillArray(int[] collection) 
+void FillArray(int random) 
 {
-    int length = collection.Length;
+    int[] collection = new int[random];
     int index = 0;
-    while (index < length) 
+    while (index < random) 
     {
         collection[index] = new Random().Next(1, 10);
         index++;
@@ -37,9 +37,8 @@ void SelectionSort(int[] array) {
 }
 
 int rand = new Random().Next(2, 20);
-int[] arr = new int[rand];
 
-FillArray(arr);
+FillArray(rand);
 
 PrintArray(arr);
 SelectionSort(arr);
