@@ -39,7 +39,7 @@ void PrintArray(int[] array) {
     Console.WriteLine();
 }
 
-// Void функция(ничего не возвращает). Сортирует полученный(при вызове) массив в порядке возврастания:
+// Void функция(ничего не возвращает). Сортирует полученный(при вызове) массив в порядке возрастания:
 void SelectionSort(int[] array) {
     for (int i = 0; i < array.Length - 1; i++) {
         int minPosition = i;
