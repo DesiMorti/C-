@@ -3,15 +3,15 @@
 */
 
 Console.Clear();
-FillArray(int random) {
-    int[] collection = new int[random];
+void FillArray(int[] collection) 
+{
+    int length = collection.Length;
     int index = 0;
-    while (index < random) 
+    while (index < length) 
     {
         collection[index] = new Random().Next(1, 10);
         index++;
     }
-    return collection;
 }
 
 void PrintArray(int[] array) {
@@ -24,7 +24,7 @@ void PrintArray(int[] array) {
 
 void SelectionSort(int[] array) {
     for (int i = 0; i < array.Length - 1; i++) {
-        int minPosition = i;п
+        int minPosition = i;
         for (int j = i+1; j < array.Length; j++) {
             if(array[j] < array[minPosition]) {
                 minPosition = j;
@@ -37,8 +37,9 @@ void SelectionSort(int[] array) {
 }
 
 int rand = new Random().Next(2, 20);
+int[] arr = new int[rand];
 
-int[] arr = FillArray(rand);
+FillArray(arr);
 
 PrintArray(arr);
 SelectionSort(arr);
