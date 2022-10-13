@@ -6,11 +6,28 @@
 
 Console.Clear();
 int A;
-int B; 
-int result;
+int B;
 
 Console.Write("Введите число А: ");
-int.TryParse(Console.ReadLine()!, out A);
+bool flag1 = int.TryParse(Console.ReadLine()!, out A);
 Console.Write("Введите число B: ");
-bool flag = int.TryParse(Console.ReadLine()!, out B);
+bool flag2 = int.TryParse(Console.ReadLine()!, out B);
 
+void MathExp(int A, int B)
+{
+    if (B > 0 && flag1 && flag1)
+    {
+        int temp;
+        for (int i = 0; i < B; i++)
+        {
+            temp = A*A;
+        }
+        Console.Write($"{Math.Pow(A, B)} ");
+    }
+    else
+    {
+        Console.Write("Неверный ввод");
+    }
+}
+
+MathExp(A,B);
