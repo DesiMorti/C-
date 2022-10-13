@@ -17,12 +17,12 @@ void MathExp(int A, int B)
 {
     if (B > 0 && flag1 && flag1)
     {
-        int temp;
+        int temp = 0;
         for (int i = 0; i < B; i++)
         {
             temp = A*A;
         }
-        Console.Write($"{Math.Pow(A, B)} ");
+        Console.Write($"{temp} ");
     }
     else
     {
