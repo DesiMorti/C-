@@ -18,9 +18,11 @@ double[] FillArray(int size)
 {
     double[] collection = new double[size];
     int index = 0;
+    int min = -5;
+    int max = 5;
     while (index < size)
     {
-        collection[index] = new Random().NextDouble()*10-10;
+        collection[index] = min + new Random().NextDouble() * (max - min);
         index++;
     }
     return collection;
@@ -28,8 +30,8 @@ double[] FillArray(int size)
 
 double MaxMinDiff(double[] array)
 {
-    double min = array[0]; 
-    double max = array[0]; 
+    double min = array[0];
+    double max = array[0];
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] < min) min = array[i];
