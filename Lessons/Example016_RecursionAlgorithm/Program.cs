@@ -1,5 +1,5 @@
 ﻿Console.Clear();
-
+//Пример с картинкой:
 int[,] pic = new int[,]
 {
 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -54,3 +54,27 @@ PrintImage(pic);
 FillImage(13, 13);
 PrintImage(pic);
 
+// Пример с факториалом:
+double Factorial(int n)
+{
+ // 1! = 1
+ // 0! = 1
+ if(n == 1) return 1;
+ else return n * Factorial(n-1);
+}
+for (int i = 1; i < 20; i++)
+{
+ Console.WriteLine($"{i}! = {Factorial(i)}");
+}
+
+//Пример с Fibonacci:
+Console.WriteLine();
+double Fibonacci(int n)
+{
+ if(n == 1 || n == 2) return 1;
+ else return Fibonacci(n-1) + Fibonacci(n-2);
+}
+for (int i = 1; i < 50; i++)
+{
+ Console.WriteLine($"f({i}) = {Fibonacci(i)}");
+}
