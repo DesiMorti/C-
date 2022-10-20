@@ -47,7 +47,7 @@ void PrintArray(double[] array)
     Console.Write("[");
     for (int i = 0; i < count; i++)
     {
-        Console.Write($"{array[i]}");
+        Console.Write("{0,6:F2}", array[i]);
         if (i < count - 1)
         {
             Console.Write(", ");
@@ -59,4 +59,5 @@ void PrintArray(double[] array)
 
 double[] arr = FillArray(N);
 PrintArray(arr);
-Console.Write($" - разница между максимальным и минимальным элементами: {MaxMinDiff(arr)}");
+
+Console.Write(" - разница между максимальным и минимальным элементами: {0:F2}", MaxMinDiff(arr));

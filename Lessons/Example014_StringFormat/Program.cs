@@ -10,8 +10,8 @@ int[] array = new int[size];
 for (int i = 0; i < size; i++)
 {
     array[i] = new Random().Next(-9, 10);
-    Console.WriteLine($"{array[i]} ");
-    Console.WriteLine(String.Format("{0,d2}", array[i], array[2]));
+   // Console.WriteLine($"{array[i]} ");
+    Console.Write(String.Format("{0:d2}{1:d2}", array[i], ", "));
 }
 
 int sumP = 0;
