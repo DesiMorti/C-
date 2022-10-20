@@ -10,8 +10,8 @@ int[] array = new int[length];
 
 for (int i = 0; i < length; i++)
 {
-array[i] = new Random().Next(10);
-Console.Write($"{array[i]} ");
+    array[i] = new Random().Next(10);
+    Console.Write($"{array[i]} ");
 }
 
 int a;
@@ -22,14 +22,14 @@ bool num_found = false;
 
 foreach (var item in array)
 {
-if (item == a)
-{
-num_found = true;
-break;
-}
+    if (item == a)
+    {
+        num_found = true;
+        break;
+    }
 }
 
 if (num_found)
-Console.Write($"Такое число существует");
+    Console.Write($"Такое число существует");
 else
-Console.Write($"Такого числа нет");
+    Console.Write($"Такого числа нет");
