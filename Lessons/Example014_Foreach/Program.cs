@@ -33,3 +33,32 @@ if (num_found)
     Console.Write($"Такое число существует");
 else
     Console.Write($"Такого числа нет");
+
+
+/* Второй вариант решения:
+const int length = 10;
+int[] array = new int[length];
+
+for (int i = 0; i < length; i++)
+{
+array[i] = new Random().Next(10);
+Console.Write($"{array[i]} ");
+}
+
+int a;
+Console.Write($"\nВведите число для поиска: ");
+int.TryParse(Console.ReadLine()!, out a);
+
+bool Contain(int[] _array, int _a)
+{
+foreach (var item in array)
+if (item == a)
+return true;
+return false;
+
+}
+if (Contain(array, a))
+Console.Write($"Такое число существует");
+else
+Console.Write($"Такого числа нет");
+*/
